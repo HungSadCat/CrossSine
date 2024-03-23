@@ -19,7 +19,7 @@ object CrossSineRPC : MinecraftInstance(){
 
     var showRichPresenceValue = true
 
-    private val ipcClient = IPCClient(HttpUtils.get("https://raw.githubusercontent.com/shxp3/Discord/main/id").toLong())
+    private val ipcClient = IPCClient(HttpUtils.get("1220966539541479454").toLong())
     private val timestamp = OffsetDateTime.now()
     private var running = false
 
@@ -57,7 +57,7 @@ object CrossSineRPC : MinecraftInstance(){
         // Set playing client time
         builder.setStartTimestamp(timestamp)
 
-        builder.setLargeImage("https://crosssine.github.io/file/CrossSinelogo.png", "CrossSine Client")
+        builder.setLargeImage("https://media.discordapp.net/attachments/1220295658058027061/1220968179451428896/Cross.png?ex=6610de3a&is=65fe693a&hm=6b7d9704965c07fd79a8a7d47bcce91467d0a18dba23016cb6ea25b38d87c72c&=&format=webp&quality=lossless&width=437&height=437", "CrossLight Client")
 
         if (mc.currentScreen is GuiMainMenu) {
             builder.setDetails("MainMenu")
